@@ -10,7 +10,7 @@ This endpoint diffuses heat in a network
 | --------------------- |:------------------:|:-------------------------------------------------------------------------- |
 | time                  | 0.1                | The upper bound on the exponential multiplication performed by diffusion   |
 | normalize_laplacian   | False              | If True, will create a normalized laplacian matrix for diffusion           | 
-| input | are neat      | "diffusion_input"  | The key diffusion will use to search for heats in the node attributes with |
+| input_attribute_name  | "diffusion_input"  | The key diffusion will use to search for heats in the node attributes with |
 | output_attribute_name | "diffusion_output" | Will be the prefix of the _rank and _heat attriubtes created by diffusion  |  
 
 ### Request Body
