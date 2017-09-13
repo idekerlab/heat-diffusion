@@ -1,8 +1,16 @@
-# Description
-Accepts a network with node heats, and propogates the heat along edges to create a new heat layout
+heat-diffusion
+==============
+
+<img align="right" height="300" src="http://www.cytoscape.org/images/logo/cy3logoOrange.svg">
+
+---
+
+Accepts a network with node heats, and propogates the heat along edges to create a new heat layout. For details see the manuscript "Network propagation in the Cytoscape Cyberinfrastructure. Carlin DE et al. Submitted to PLoS Computational Biology."
+
+---
 
 ## POST /
-This endpoint diffuses heat in a network
+This endpoint diffuses heat in CX network and returns a new network representing the results of the diffusion.
 
 ### Query String Parameters
 
