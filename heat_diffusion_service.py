@@ -9,15 +9,15 @@ import cxmate
 
 class HeatDiffusionService(cxmate.Service):
 
-    def process(self, input_stream):
-        network, params = cxmate.Adapter.to_networkx(input_stream)
+    def process(self, params, input_stream):
+        network = cxmate.Adapter.to_networkx(input_stream)[0]
         time = params['time']
         input_key = params['input_attribute_name']
         output_key = params['output_attribute_name']
         normalize_laplacian = params['normalize_laplacian']
         network = self.diffusion(network, input_key, output_key, normalize_laplacian, time)
         network.graph['label'] = 'Output'
-        return cxmate.Adapter.from_networkx(network)
+        return cxmate.Adapter.from_networkx([network])
 
     def diffusion(self, network, input_key, output_key, normalize_laplacian, time):
         matrix = self.create_sparse_matrix(network, normalize_laplacian)
