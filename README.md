@@ -14,7 +14,7 @@ heat-diffusion is a [cxmate service](https://github.com/cxmate/cxmate)
 ## POST /
 This endpoint diffuses heat in CX network and returns a new network representing the results of the diffusion.
 
-# BD: Can you provide a sample call and sample results
+# BD: Can you provide a sample call and sample results?
 
 ### Query String Parameters
 
