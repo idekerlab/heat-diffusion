@@ -1,0 +1,4 @@
+cxmate
+networkx
+numpy
+scipy
