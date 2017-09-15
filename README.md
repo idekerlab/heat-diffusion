@@ -14,6 +14,8 @@ heat-diffusion is a [cxmate service](https://github.com/cxmate/cxmate)
 ## POST /
 This endpoint diffuses heat in CX network and returns a new network representing the results of the diffusion.
 
+# BD: Can you provide a sample call and sample results
+
 ### Query String Parameters
 
 | Name                  | Default Value      | Description                                                                |
@@ -23,11 +25,15 @@ This endpoint diffuses heat in CX network and returns a new network representing
 | input_attribute_name  | "diffusion_input"  | The key diffusion will use to search for heats in the node attributes with |
 | output_attribute_name | "diffusion_output" | Will be the prefix of the _rank and _heat attriubtes created by diffusion  |  
 
+# BD: What is the range of values "time" can take? Can you use a paragraph to explain what a CX network is, how to build one, and what to do with one when it's returned? Best to do this before "Query String Parameters" so reader has context. Good to distinguish between body and parameters, and identify as both being necessary for the call.
+
 ### Request Body `<application/json>`
 The body of the request must be a CX container containing the nodes, edges, and nodeAttributes aspects. There must exist at least one nodeAttribute with a key name that matches the `input_attribute_name` parameter and holds a double, which will be intereprested as the heat of that node. All nodes that do not have this nodeAttribute set will be treated as having zero heat.
 
 ### Response Body `<application/json>`
 THe reponse body will contain a CX container containing the nodes, edges, and nodeAttributes aspects. Each node will have two associated attributes, `output_attribute_name`\_rank and `output_attribute_name`\_heat where `output_attribute_name` can be set via the query string parameters. The \_heat attribute will contain the heat of the node after diffusion, the \_rank will have the rank of the node relative to the heats of all other nodes in the network, starting with 0 as the hottest node.
+
+# BD: Please add a Team Members section, with e-mails for the team members. Need to give credit and also provide a human-human linkage.
 
 Contributors
 ------------
