@@ -12,10 +12,10 @@ A RESTful service that finds network neighborhoods in a larger network relevant 
 heat-diffusion is a [cxmate service](https://github.com/cxmate/cxmate)
 
 ## Sample Usage
-Assuming heat-diffusion is running localhost on port 80, a call via curl might look like:
+Assuming heat-diffusion is running http://v3.heat-diffusion.cytoscape.io on port 80, a call via curl might look like:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d "@my_network.cx" "localhost:80?time=0.5"
+curl -X POST -H "Content-Type: application/json" -d "@my_network.cx" "http://v3.heat-diffusion.cytoscape.io:80?time=0.5"
 ```
 
 my_network.cx must be a CX network containing the nodes, edges, and nodeAttributes aspects.
