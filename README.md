@@ -12,7 +12,7 @@ A RESTful service that finds network neighborhoods in a larger network relevant 
 heat-diffusion is a [cxmate service](https://github.com/cxmate/cxmate)
 
 ##Sample Jupyter Notebook
-Please see the jupyter notebook in the repsitory for an example interaction with the service. You will need to install the ndex package also included in this repsitory for the notebook to run locally on your machine. 
+Please see the jupyter notebook in the repsitory for an example interaction with the service. 
 
 ## Sample Usage
 Assuming heat-diffusion is running http://v3.heat-diffusion.cytoscape.io on port 80, a call via curl might look like:
