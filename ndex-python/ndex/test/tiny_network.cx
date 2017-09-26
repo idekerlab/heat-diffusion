@@ -1,0 +1,419 @@
+[
+  {
+    "numberVerification": [
+      {
+        "longNumber": 281474976710655
+      }
+    ]
+  },
+  {
+    "metaData": [
+      {
+        "consistencyGroup": 1,
+        "elementCount": 1,
+        "lastUpdate": 1484003285186,
+        "name": "ndexStatus",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 1,
+        "lastUpdate": 1484003285483,
+        "name": "provenanceHistory",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 6,
+        "idCounter": 6,
+        "name": "nodes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 7,
+        "idCounter": 7,
+        "name": "edges",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 1,
+        "name": "networkAttributes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 19,
+        "name": "nodeAttributes",
+        "properties": [],
+        "version": "1.0"
+      },
+      {
+        "consistencyGroup": 1,
+        "elementCount": 21,
+        "name": "edgeAttributes",
+        "properties": [],
+        "version": "1.0"
+      }
+    ]
+  },
+  {
+    "ndexStatus": [
+      {
+        "externalId": "7a1833e3-d6c0-11e6-8835-06832d634f41",
+        "creationTime": 1484003285186,
+        "modificationTime": 1484003285186,
+        "visibility": "PRIVATE",
+        "published": false,
+        "nodeCount": 6,
+        "edgeCount": 7,
+        "owner": "cj",
+        "ndexServerURI": "http://dev.ndexbio.org",
+        "readOnly": false
+      }
+    ]
+  },
+  {
+    "provenanceHistory": [
+      {
+        "entity": {
+          "uri": "http://dev.ndexbio.org/v2/network/7a1833e3-d6c0-11e6-8835-06832d634f41/summary",
+          "creationEvent": {
+            "inputs": null,
+            "startedAtTime": 1484003285186,
+            "endedAtTime": 1484003285186,
+            "eventType": "Program Upload in CX",
+            "properties": [
+              {
+                "name": "user",
+                "value": "j c"
+              },
+              {
+                "name": "user name",
+                "value": "cj"
+              }
+            ]
+          },
+          "properties": [
+            {
+              "name": "edge count",
+              "value": "7"
+            },
+            {
+              "name": "node count",
+              "value": "6"
+            },
+            {
+              "name": "dc:title",
+              "value": "rudi"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "@id": 1,
+        "n": "MDFI"
+      },
+      {
+        "@id": 2,
+        "n": "BHLHE40"
+      },
+      {
+        "@id": 3,
+        "n": "AANAT-A129T"
+      },
+      {
+        "@id": 4,
+        "n": "AANAT-T3M"
+      },
+      {
+        "@id": 5,
+        "n": "AANAT"
+      },
+      {
+        "@id": 6,
+        "n": "ACTB"
+      }
+    ]
+  },
+  {
+    "edges": [
+      {
+        "@id": 1,
+        "s": 1,
+        "t": 3,
+        "i": "interacts_with"
+      },
+      {
+        "@id": 2,
+        "s": 1,
+        "t": 4,
+        "i": "interacts_with"
+      },
+      {
+        "@id": 3,
+        "s": 1,
+        "t": 5,
+        "i": "interacts_with"
+      },
+      {
+        "@id": 4,
+        "s": 2,
+        "t": 3,
+        "i": "interacts_with"
+      },
+      {
+        "@id": 5,
+        "s": 2,
+        "t": 4,
+        "i": "interacts_with"
+      },
+      {
+        "@id": 6,
+        "s": 2,
+        "t": 5,
+        "i": "interacts_with"
+      },
+      {
+        "@id": 7,
+        "s": 6,
+        "t": 6,
+        "i": "interacts_with"
+      }
+    ]
+  },
+  {
+    "networkAttributes": [
+      {
+        "n": "name",
+        "v": "rudi"
+      }
+    ]
+  },
+  {
+    "nodeAttributes": [
+      {
+        "po": 1,
+        "n": "Interactor_Gene_ID",
+        "v": "4188"
+      },
+      {
+        "po": 2,
+        "n": "Interactor_Gene_ID",
+        "v": "8553"
+      },
+      {
+        "po": 3,
+        "n": "Category",
+        "v": "Disease mutation"
+      },
+      {
+        "po": 3,
+        "n": "Allele_ID",
+        "v": "15_22963"
+      },
+      {
+        "po": 3,
+        "n": "Mutation_RefSeq_NT",
+        "v": "NM_001088:c.385G>A"
+      },
+      {
+        "po": 3,
+        "n": "Entrez_Gene_ID",
+        "v": "15"
+      },
+      {
+        "po": 3,
+        "n": "Mutation_RefSeq_AA",
+        "v": "NP_001079:p.A129T"
+      },
+      {
+        "po": 4,
+        "n": "Category",
+        "v": "Non-disease variant"
+      },
+      {
+        "po": 4,
+        "n": "Allele_ID",
+        "v": "15_900207"
+      },
+      {
+        "po": 4,
+        "n": "Mutation_RefSeq_NT",
+        "v": "NM_001088:c.8C>T"
+      },
+      {
+        "po": 4,
+        "n": "Entrez_Gene_ID",
+        "v": "15"
+      },
+      {
+        "po": 4,
+        "n": "Mutation_RefSeq_AA",
+        "v": "NP_001079:p.T3M"
+      },
+      {
+        "po": 5,
+        "n": "Category",
+        "v": "Wild-type"
+      },
+      {
+        "po": 5,
+        "n": "Allele_ID",
+        "v": "15_0"
+      },
+      {
+        "po": 5,
+        "n": "Entrez_Gene_ID",
+        "v": "15"
+      },
+      {
+        "po": 6,
+        "n": "Category",
+        "v": "Wild-type"
+      },
+      {
+        "po": 6,
+        "n": "Allele_ID",
+        "v": "60_0"
+      },
+      {
+        "po": 6,
+        "n": "Entrez_Gene_ID",
+        "v": "60"
+      },
+      {
+        "po": 6,
+        "n": "Interactor_Gene_ID",
+        "v": "60"
+      }
+    ]
+  },
+  {
+    "edgeAttributes": [
+      {
+        "po": 1,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "1"
+      },
+      {
+        "po": 1,
+        "n": "Y2H_score",
+        "v": "1"
+      },
+      {
+        "po": 1,
+        "n": "interaction",
+        "v": "interacts_with"
+      },
+      {
+        "po": 2,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "1"
+      },
+      {
+        "po": 2,
+        "n": "Y2H_score",
+        "v": "1"
+      },
+      {
+        "po": 2,
+        "n": "interaction",
+        "v": "interacts_with"
+      },
+      {
+        "po": 3,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "1"
+      },
+      {
+        "po": 3,
+        "n": "Y2H_score",
+        "v": "1"
+      },
+      {
+        "po": 3,
+        "n": "interaction",
+        "v": "interacts_with"
+      },
+      {
+        "po": 4,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "1"
+      },
+      {
+        "po": 4,
+        "n": "Y2H_score",
+        "v": "0"
+      },
+      {
+        "po": 4,
+        "n": "interaction",
+        "v": "interacts_with"
+      },
+      {
+        "po": 5,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "1"
+      },
+      {
+        "po": 5,
+        "n": "Y2H_score",
+        "v": "1"
+      },
+      {
+        "po": 5,
+        "n": "interaction",
+        "v": "interacts_with"
+      },
+      {
+        "po": 6,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "1"
+      },
+      {
+        "po": 6,
+        "n": "Y2H_score",
+        "v": "1"
+      },
+      {
+        "po": 6,
+        "n": "interaction",
+        "v": "interacts_with"
+      },
+      {
+        "po": 7,
+        "n": "In_Rolland_et_al_(Cell-2014)",
+        "v": "0"
+      },
+      {
+        "po": 7,
+        "n": "Y2H_score",
+        "v": "1"
+      },
+      {
+        "po": 7,
+        "n": "interaction",
+        "v": "interacts_with"
+      }
+    ]
+  },
+  {
+    "status": [
+      {
+        "error": "",
+        "success": true
+      }
+    ]
+  }
+]

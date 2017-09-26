@@ -1,0 +1,1765 @@
+[ {
+  "numberVerification" : [ {
+    "longNumber" : 281474976710655
+  } ]
+}, {
+  "metaData" : [ {
+    "consistencyGroup" : 1,
+    "elementCount" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "@context",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "citations",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "edgeAttributes",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "edgeCitations",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "edgeSupports",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 37,
+    "lastUpdate" : 1474658456118,
+    "name" : "edges",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 43,
+    "lastUpdate" : 1474658456118,
+    "name" : "functionTerms",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "ndexStatus",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "networkAttributes",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "nodeAttributes",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "nodeCitations",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "nodeSupports",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 37,
+    "lastUpdate" : 1474658456118,
+    "name" : "nodes",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "lastUpdate" : 1474658456118,
+    "name" : "provenanceHistory",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 2,
+    "lastUpdate" : 1474658456118,
+    "name" : "reifiedEdges",
+    "properties" : [ ],
+    "version" : "1.0"
+  }, {
+    "consistencyGroup" : 1,
+    "elementCount" : 15,
+    "lastUpdate" : 1474658456118,
+    "name" : "supports",
+    "properties" : [ ],
+    "version" : "1.0"
+  } ]
+}, {
+  "ndexStatus" : [ {
+    "externalId" : "d9cb80f7-81c2-11e6-b0a6-06603eb7f303",
+    "creationTime" : 1474658455902,
+    "modificationTime" : 1474658456118,
+    "visibility" : "PRIVATE",
+    "published" : false,
+    "nodeCount" : 37,
+    "edgeCount" : 37,
+    "owner" : "cjtest",
+    "ndexServerURI" : "http://localhost/rest/",
+    "readOnly" : false
+  } ]
+}, {
+  "provenanceHistory" : [ {
+    "entity" : {
+      "properties" : [ {
+        "name" : "edge count",
+        "value" : "37"
+      }, {
+        "name" : "node count",
+        "value" : "37"
+      }, {
+        "name" : "dc:title",
+        "value" : "BEL Framework Small Corpus Document"
+      }, {
+        "name" : "description",
+        "value" : "Approximately 2000 hand curated statements drawn from 57 PubMeds"
+      }, {
+        "name" : "version",
+        "value" : "1.2"
+      } ],
+      "creationEvent" : {
+        "properties" : [ {
+          "name" : "user",
+          "value" : "c c"
+        }, {
+          "name" : "account name",
+          "value" : "cjtest"
+        }, {
+          "name" : "filename",
+          "value" : "tiny-corpus.xbel"
+        } ],
+        "inputs" : null,
+        "startedAtTime" : 1474658455902,
+        "endedAtTime" : 1474658455902,
+        "eventType" : "File Upload"
+      },
+      "uri" : "http://public.ndexbio.org/network/d9cb80f7-81c2-11e6-b0a6-06603eb7f303"
+    }
+  } ]
+}, {
+  "@context" : [ {
+    "Disease" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-disease.belanno",
+    "SenseOrgan" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-sense-organ.belanno",
+    "DigestiveSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-digestive-system.belanno",
+    "bel" : "http://belframework.org/schema/1.0/xbel",
+    "MESHCL" : "http://resource.belframework.org/belframework/1.0/namespace/mesh-cellular-locations.belns",
+    "SCHEM" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-legacy-chemical-names.belns",
+    "Tissue" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-tissue.belanno",
+    "PFH" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-protein-families.belns",
+    "HemicAndImmuneSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-hemic-and-immune-system.belanno",
+    "UrogenitalSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-urogenital-system.belanno",
+    "HGNC" : "http://resource.belframework.org/belframework/1.0/namespace/hgnc-approved-symbols.belns",
+    "PFM" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-protein-families.belns",
+    "CHEBI" : "http://resource.belframework.org/belframework/1.0/namespace/chebi-names.belns",
+    "NervousSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-nervous-system.belanno",
+    "IntegumentarySystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-integumentary-system.belanno",
+    "SPAC" : "http://resource.belframework.org/belframework/1.0/namespace/swissprot-accession-numbers.belns",
+    "BodyRegion" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-body-region.belanno",
+    "FluidAndSecretion" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-fluid-and-secretion.belanno",
+    "PFR" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-named-rat-protein-families.belns",
+    "EGID" : "http://resource.belframework.org/belframework/1.0/namespace/entrez-gene-ids-hmr.belns",
+    "SDIS" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-legacy-diseases.belns",
+    "Cell" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell.belanno",
+    "Species" : "http://resource.belframework.org/belframework/1.0/annotation/species-taxonomy-id.belanno",
+    "RespiratorySystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-respiratory-system.belanno",
+    "GO" : "http://resource.belframework.org/belframework/1.0/namespace/go-biological-processes-names.belns",
+    "MESHD" : "http://resource.belframework.org/belframework/1.0/namespace/mesh-diseases.belns",
+    "CHEBIID" : "http://resource.belframework.org/belframework/1.0/namespace/chebi-ids.belns",
+    "RGD" : "http://resource.belframework.org/belframework/1.0/namespace/rgd-approved-symbols.belns",
+    "MGI" : "http://resource.belframework.org/belframework/1.0/namespace/mgi-approved-symbols.belns",
+    "NCH" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-named-human-complexes.belns",
+    "CardiovascularSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-cardiovascular-system.belanno",
+    "MuskuloskeletalSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-musculoskeletal-system.belanno",
+    "CellLine" : "http://resource.belframework.org/belframework/1.0/annotation/atcc-cell-line.belanno",
+    "MESHPP" : "http://resource.belframework.org/belframework/1.0/namespace/mesh-biological-processes.belns",
+    "CellStructure" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-cell-structure.belanno",
+    "EndocrineSystem" : "http://resource.belframework.org/belframework/1.0/annotation/mesh-endocrine-system.belanno",
+    "NCM" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-named-mouse-complexes.belns",
+    "NCR" : "http://resource.belframework.org/belframework/1.0/namespace/selventa-named-rat-complexes.belns",
+    "TextLocation" : "http://belframework.org/schema/1.0/xbel/internalAnnotation/TextLocation"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "name",
+    "v" : "BEL Framework Small Corpus Document"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "description",
+    "v" : "Approximately 2000 hand curated statements drawn from 57 PubMeds"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "version",
+    "v" : "1.2"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "ndex:sourceFormat",
+    "v" : "BEL"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "bel:contactInfo",
+    "v" : "support@belframework.org"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "bel:copyright",
+    "v" : "Copyright (c) 2011, Selventa. All Rights Reserved."
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "bel:author",
+    "v" : "Selventa"
+  } ]
+}, {
+  "networkAttributes" : [ {
+    "n" : "bel:license",
+    "v" : "Creative Commons Attribution-Non-Commercial-ShareAlike 3.0 Unported License"
+  } ]
+}, {
+  "citations" : [ {
+    "@id" : 105590855,
+    "dc:title" : "Trends in molecular medicine",
+    "dc:contributor" : [ "de Nigris F", "Lerman A", "Ignarro LJ", "Williams-Ignarro S", "Sica V", "Baker AH", "Lerman LO", "Geng YJ", "Napoli C" ],
+    "dc:identifier" : "pmid:12928037",
+    "dc:type" : "URI",
+    "dc:description" : null,
+    "attributes" : [ {
+      "n" : "name",
+      "v" : "Pubmed 12928037",
+      "t" : "string"
+    } ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "Oxidation and nitration of macromolecules, such as\nproteins, DNA and lipids, are prominent in atherosclerotic\narteries.",
+    "citation" : 105590855,
+    "@id" : 105590856,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "Arterial cells are\nhighly susceptible to oxidative stress, which can induce\nboth necrosis and apoptosis (programmed cell death) [1,2].",
+    "citation" : 105590855,
+    "@id" : 105590871,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "One such risk factor is oxLDL,\nwhich exert pro-apoptotic effects on a variety of cell\nlineages, including endothelial cells and VSMCs, both in\ncultured cells and in arteries. [19���26]. Increased formation\nof oxygen radicals (and other radical species)\nfacilitates LDL oxidation and influences oxidation-sensitive\nmechanisms [15]. It",
+    "citation" : 105590855,
+    "@id" : 105590884,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "Not surprisingly, high concentrations of exogenous\nreactive oxygen species (ROS), generated by enzymatic\nreactions or by radiation, also stimulate the apoptosis of\nendothelial cells in vitro [29���31].",
+    "citation" : 105590855,
+    "@id" : 105590895,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "The peptide hormone angiotensin II and\npro-inflammatory cytokines also trigger the apoptotic\nprogram in endothelial cells [33,34].",
+    "citation" : 105590855,
+    "@id" : 105590900,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "Aging, one of the\nmajor predictors for atherosclerotic lesion formation,\nincreases the sensitivity of endothelial cells to apoptosis\ninduced by in vitro and in vivo stimuli [35���37].",
+    "citation" : 105590855,
+    "@id" : 105590905,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "Shear stress\nenhances expression of the gene encoding the endothelial\nnitric oxide synthase (eNOS) and further stimulates its\nenzymatic activity, leading to physiologic low concentrations\nof nitric oxide (NO) within endothelial cells\n[44���46]. This continuous generation of NO prevents the\napoptosis of endothelial cells, thereby protecting the\nendothelial monolayer from injury [47,48].",
+    "citation" : 105590855,
+    "@id" : 105590914,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "More importantly,\nintervention with L-arginine has induced beneficial\neffects on atherosclerosis in experimental and human\nstudies [46,49].",
+    "citation" : 105590855,
+    "@id" : 105590936,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "OxLDL induces the generation of ROS in different\nvascular cell types [15,58], and might also promote a rise\nin ROS levels through a decrease in ROS degradation,\nbecause oxLDL induces a reduction in the antioxidant\nenzymes Cu/Zn superoxide dismutase [59] and glutathione\nperoxidase [60].",
+    "citation" : 105590855,
+    "@id" : 105590941,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "For instance,\nduring 7-ketocholesterol-induced apoptosis of U937 cells,\nthe cellular antioxidant content falls rapidly [64], but\nadministration of two potent antioxidants, the aminothiols\nglutathione andN-acetylcysteine, can protect themonocytic\ncells from 7-ketocholesterol-induced apoptotic cell death\n[64].",
+    "citation" : 105590855,
+    "@id" : 105590951,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "In addition, another oxygen-radical scavenger enzyme,\ncatalase, can prevent VSMC apoptosis triggered by hydrogen\nperoxide [27,65].",
+    "citation" : 105590855,
+    "@id" : 105590965,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "The proto-oncogene c-myc can\npromote cell death (probably mediated through p53) or\ncell proliferation, depending on its expression level. It\nfunctions as a nuclear phosphoprotein with particular\nproperties of a transcription factor [68,69]. In serumdeprived\ncultures, cells overexpressing c-myc readily\nundergo apoptosis. In addition, deregulation of c-myc\ncauses apoptosis of VSMCs deprived of growth factors or\ntreated with cytokines such as interferon-g [70].",
+    "citation" : 105590855,
+    "@id" : 105590977,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "Tissue factor (TF) is a 47 kDa transmembrane glycoprotein\nthat initiates blood coagulation by binding\ncoagulation factor VII and its activated form (factor\nVIIa), to produce a high-affinity complex [72] that\nproteolytically activates factors IX and X, leading to\nthrombin generation.",
+    "citation" : 105590855,
+    "@id" : 105590986,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "TF works at the surface of cell\nmembranes, and its activity is highly dependent on the\npresence of phosphatidylserine (PS), an anionic phospholipid\nthat is redistributed on the cell surface during\napoptotic death and confers a potent pro-coagulant activity\nto the apoptotic cell [74].",
+    "citation" : 105590855,
+    "@id" : 105591012,
+    "attributes" : [ ]
+  } ]
+}, {
+  "supports" : [ {
+    "text" : "TIMP-3 can be anti-angiogenic by direct binding to vascular\nendothelial growth factor (VEGF) receptor 2 in a matrix-metalloproteinase-\nindependent manner [94].",
+    "citation" : 105590855,
+    "@id" : 105591024,
+    "attributes" : [ ]
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590860,
+    "f" : "bel:pathology",
+    "args" : [ "MESHD:Atherosclerosis" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590860
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590865,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:lipid oxidation" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590865
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590869,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:protein oxidation" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590869
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590874,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:response to oxidative stress" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590874
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590878,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:apoptosis" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590878
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590882,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:necrosis" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590882
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590888,
+    "f" : "bel:abundance",
+    "args" : [ "SCHEM:Oxidized Low Density Lipoprotein" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590888
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590893,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:oxygen radical" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590893
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590898,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:reactive oxygen species" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590898
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590903,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:angiotensin II" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590903
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590908,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:aging" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590908
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590911,
+    "f" : "bel:pathology",
+    "args" : [ "MESHD:Plaque, Atherosclerotic" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590911
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590917,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:response to fluid shear stress" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590917
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590921,
+    "f" : "bel:rnaAbundance",
+    "args" : [ "HGNC:NOS3" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590921
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590927,
+    "f" : "bel:catalyticActivity",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:NOS3" ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590927
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590932,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:nitric oxide" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590932
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590939,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:L-arginine" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590939
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590945,
+    "f" : "bel:proteinAbundance",
+    "args" : [ "HGNC:SOD1" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590945
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590949,
+    "f" : "bel:proteinAbundance",
+    "args" : [ "PFH:GPX Family" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590949
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590954,
+    "f" : "bel:abundance",
+    "args" : [ "SCHEM:7-Ketocholesterol" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590954
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590959,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:antioxidant" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590959
+  } ]
+}, {
+  "reifiedEdges" : [ {
+    "edge" : 105590961,
+    "node" : 105590963
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590963
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590968,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:hydrogen peroxide" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590968
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590972,
+    "f" : "bel:proteinAbundance",
+    "args" : [ "HGNC:CAT" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590972
+  } ]
+}, {
+  "reifiedEdges" : [ {
+    "edge" : 105590973,
+    "node" : 105590975
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590975
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590980,
+    "f" : "bel:proteinAbundance",
+    "args" : [ "HGNC:MYC" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590980
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590984,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:cell proliferation" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590984
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590995,
+    "f" : "bel:peptidaseActivity",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:complexAbundance",
+      "args" : [ {
+        "po" : null,
+        "f" : "bel:proteinAbundance",
+        "args" : [ "HGNC:F3" ]
+      }, {
+        "po" : null,
+        "f" : "bel:proteinAbundance",
+        "args" : [ "HGNC:F7" ]
+      } ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590995
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105590999,
+    "f" : "bel:peptidaseActivity",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:F9" ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105590999
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591004,
+    "f" : "bel:peptidaseActivity",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:F10" ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591004
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591009,
+    "f" : "bel:peptidaseActivity",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:F2" ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591009
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591015,
+    "f" : "bel:abundance",
+    "args" : [ "CHEBI:phosphatidyl-L-serine" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591015
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591017,
+    "f" : "bel:peptidaseActivity",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:F3" ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591017
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591022,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:coagulation" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591022
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591027,
+    "f" : "bel:proteinAbundance",
+    "args" : [ "HGNC:TIMP3" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591027
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591030,
+    "f" : "bel:biologicalProcess",
+    "args" : [ "GO:angiogenesis" ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591030
+  } ]
+}, {
+  "functionTerms" : [ {
+    "po" : 105591035,
+    "f" : "bel:complexAbundance",
+    "args" : [ {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:TIMP3" ]
+    }, {
+      "po" : null,
+      "f" : "bel:proteinAbundance",
+      "args" : [ "HGNC:KDR" ]
+    } ]
+  } ]
+}, {
+  "nodes" : [ {
+    "@id" : 105591035
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590866,
+    "s" : 105590860,
+    "t" : 105590865,
+    "i" : "bel:positiveCorrelation"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590866,
+    "n" : "CardiovascularSystem",
+    "v" : "Arteries"
+  }, {
+    "po" : 105590866,
+    "n" : "Disease",
+    "v" : "Atherosclerosis"
+  }, {
+    "po" : 105590866,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590866 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590866 ],
+    "supports" : [ 105590856 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590870,
+    "s" : 105590860,
+    "t" : 105590869,
+    "i" : "bel:positiveCorrelation"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590870,
+    "n" : "CardiovascularSystem",
+    "v" : "Arteries"
+  }, {
+    "po" : 105590870,
+    "n" : "Disease",
+    "v" : "Atherosclerosis"
+  }, {
+    "po" : 105590870,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590870 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590870 ],
+    "supports" : [ 105590856 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590879,
+    "s" : 105590874,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590879,
+    "n" : "CardiovascularSystem",
+    "v" : "Arteries"
+  }, {
+    "po" : 105590879,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590879 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590879 ],
+    "supports" : [ 105590871 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590883,
+    "s" : 105590874,
+    "t" : 105590882,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590883,
+    "n" : "CardiovascularSystem",
+    "v" : "Arteries"
+  }, {
+    "po" : 105590883,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590883 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590883 ],
+    "supports" : [ 105590871 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590889,
+    "s" : 105590888,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590889,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590889,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590889 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590889 ],
+    "supports" : [ 105590884 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590890,
+    "s" : 105590888,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590890,
+    "n" : "MuskuloskeletalSystem",
+    "v" : "Muscle, Smooth, Vascular"
+  }, {
+    "po" : 105590890,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590890 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590890 ],
+    "supports" : [ 105590884 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590894,
+    "s" : 105590893,
+    "t" : 105590888,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590894,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590894 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590894 ],
+    "supports" : [ 105590884 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590899,
+    "s" : 105590898,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590899,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590899,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590899 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590899 ],
+    "supports" : [ 105590895 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590904,
+    "s" : 105590903,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590904,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590904,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590904 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590904 ],
+    "supports" : [ 105590900 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590912,
+    "s" : 105590908,
+    "t" : 105590911,
+    "i" : "bel:positiveCorrelation"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590912,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590912 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590912 ],
+    "supports" : [ 105590905 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590913,
+    "s" : 105590908,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590913,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590913,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590913 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590913 ],
+    "supports" : [ 105590905 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590922,
+    "s" : 105590917,
+    "t" : 105590921,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590922,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590922,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590922 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590922 ],
+    "supports" : [ 105590914 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590928,
+    "s" : 105590917,
+    "t" : 105590927,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590928,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590928,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590928 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590928 ],
+    "supports" : [ 105590914 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590933,
+    "s" : 105590927,
+    "t" : 105590932,
+    "i" : "bel:directlyIncreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590933,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590933,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590933 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590933 ],
+    "supports" : [ 105590914 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590935,
+    "s" : 105590932,
+    "t" : 105590878,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590935,
+    "n" : "TextLocation",
+    "v" : "Review"
+  }, {
+    "po" : 105590935,
+    "n" : "Cell",
+    "v" : "Endothelial Cells"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590935 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590935 ],
+    "supports" : [ 105590914 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590940,
+    "s" : 105590939,
+    "t" : 105590860,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590940,
+    "n" : "Disease",
+    "v" : "Atherosclerosis"
+  }, {
+    "po" : 105590940,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590940 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590940 ],
+    "supports" : [ 105590936 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590942,
+    "s" : 105590888,
+    "t" : 105590898,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590942,
+    "n" : "Tissue",
+    "v" : "Endothelium, Vascular"
+  }, {
+    "po" : 105590942,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590942 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590942 ],
+    "supports" : [ 105590941 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590946,
+    "s" : 105590888,
+    "t" : 105590945,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590946,
+    "n" : "Tissue",
+    "v" : "Endothelium, Vascular"
+  }, {
+    "po" : 105590946,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590946 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590946 ],
+    "supports" : [ 105590941 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590950,
+    "s" : 105590888,
+    "t" : 105590949,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590950,
+    "n" : "Tissue",
+    "v" : "Endothelium, Vascular"
+  }, {
+    "po" : 105590950,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590950 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590950 ],
+    "supports" : [ 105590941 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590955,
+    "s" : 105590954,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590955,
+    "n" : "CellLine",
+    "v" : "U-937"
+  }, {
+    "po" : 105590955,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590955 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590955 ],
+    "supports" : [ 105590951 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590960,
+    "s" : 105590954,
+    "t" : 105590959,
+    "i" : "bel:negativeCorrelation"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590960,
+    "n" : "CellLine",
+    "v" : "U-937"
+  }, {
+    "po" : 105590960,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590960 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590960 ],
+    "supports" : [ 105590951 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590961,
+    "s" : 105590954,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590961,
+    "n" : "CellLine",
+    "v" : "U-937"
+  }, {
+    "po" : 105590961,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590961 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590961 ],
+    "supports" : [ 105590951 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590964,
+    "s" : 105590959,
+    "t" : 105590963,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590964,
+    "n" : "CellLine",
+    "v" : "U-937"
+  }, {
+    "po" : 105590964,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590964 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590964 ],
+    "supports" : [ 105590951 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590969,
+    "s" : 105590968,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590969,
+    "n" : "Tissue",
+    "v" : "Muscle, Smooth, Vascular"
+  }, {
+    "po" : 105590969,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590969 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590969 ],
+    "supports" : [ 105590965 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590973,
+    "s" : 105590968,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590973,
+    "n" : "Tissue",
+    "v" : "Muscle, Smooth, Vascular"
+  }, {
+    "po" : 105590973,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590973 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590973 ],
+    "supports" : [ 105590965 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590976,
+    "s" : 105590972,
+    "t" : 105590975,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590976,
+    "n" : "Tissue",
+    "v" : "Muscle, Smooth, Vascular"
+  }, {
+    "po" : 105590976,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590976 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590976 ],
+    "supports" : [ 105590965 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590981,
+    "s" : 105590980,
+    "t" : 105590878,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590981,
+    "n" : "Tissue",
+    "v" : "Muscle, Smooth, Vascular"
+  }, {
+    "po" : 105590981,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590981 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590981 ],
+    "supports" : [ 105590977 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105590985,
+    "s" : 105590980,
+    "t" : 105590984,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105590985,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105590985 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105590985 ],
+    "supports" : [ 105590977 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591000,
+    "s" : 105590995,
+    "t" : 105590999,
+    "i" : "bel:directlyIncreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591000,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591000 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591000 ],
+    "supports" : [ 105590986 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591005,
+    "s" : 105590995,
+    "t" : 105591004,
+    "i" : "bel:directlyIncreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591005,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591005 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591005 ],
+    "supports" : [ 105590986 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591010,
+    "s" : 105590999,
+    "t" : 105591009,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591010,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591010 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591010 ],
+    "supports" : [ 105590986 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591011,
+    "s" : 105591004,
+    "t" : 105591009,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591011,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591011 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591011 ],
+    "supports" : [ 105590986 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591018,
+    "s" : 105591015,
+    "t" : 105591017,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591018,
+    "n" : "CellStructure",
+    "v" : "Cell Membrane"
+  }, {
+    "po" : 105591018,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591018 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591018 ],
+    "supports" : [ 105591012 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591019,
+    "s" : 105590878,
+    "t" : 105591015,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591019,
+    "n" : "CellStructure",
+    "v" : "Cell Membrane"
+  }, {
+    "po" : 105591019,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591019 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591019 ],
+    "supports" : [ 105591012 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591023,
+    "s" : 105591015,
+    "t" : 105591022,
+    "i" : "bel:increases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591023,
+    "n" : "CellStructure",
+    "v" : "Cell Membrane"
+  }, {
+    "po" : 105591023,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591023 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591023 ],
+    "supports" : [ 105591012 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591031,
+    "s" : 105591027,
+    "t" : 105591030,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591031,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591031 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591031 ],
+    "supports" : [ 105591024 ]
+  } ]
+}, {
+  "edges" : [ {
+    "@id" : 105591036,
+    "s" : 105591035,
+    "t" : 105591030,
+    "i" : "bel:decreases"
+  } ]
+}, {
+  "edgeAttributes" : [ {
+    "po" : 105591036,
+    "n" : "TextLocation",
+    "v" : "Review"
+  } ]
+}, {
+  "edgeCitations" : [ {
+    "po" : [ 105591036 ],
+    "citations" : [ 105590855 ]
+  } ]
+}, {
+  "edgeSupports" : [ {
+    "po" : [ 105591036 ],
+    "supports" : [ 105591024 ]
+  } ]
+}, {
+  "metaData" : [ {
+    "idCounter" : 105591035,
+    "name" : "nodes",
+    "properties" : [ ]
+  }, {
+    "idCounter" : 105591036,
+    "name" : "edges",
+    "properties" : [ ]
+  }, {
+    "idCounter" : 105590855,
+    "name" : "citations",
+    "properties" : [ ]
+  }, {
+    "idCounter" : 105591024,
+    "name" : "supports",
+    "properties" : [ ]
+  } ]
+}, {
+  "status" : [ {
+    "error" : "",
+    "success" : true
+  } ]
+} ]

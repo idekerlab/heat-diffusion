@@ -1,0 +1,15 @@
+name	st_layout
+S1	Source
+S2	Source
+S3	Source
+T1	Target
+T2	Target
+F1	Forward
+F2	Forward
+F3	Forward
+F4	Forward
+F5	Forward
+R1	Reverse
+R2	Reverse
+R3	Reverse
+B	Both
