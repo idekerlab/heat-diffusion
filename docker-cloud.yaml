@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  heat-diffusion:
+    image: ericsage/heat-diffusion-service
+    container_name: heat-diffusion
+    deploy:
+      replicas: 1
+  cxmate:
+    image: cxmate/cxmate
+    container_name: heat-diffusion-cxmate
+    deploy:
+      replicas: 1
+    ports:
+      - 80:80
+    configs:
+      - source: cxmate_config
+        target: /cxmate
+    depends_on:
+     - heat-diffusion
+configs:
+  cxmate_config:
+    file: ./cxmate.json
