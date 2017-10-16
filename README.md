@@ -41,7 +41,7 @@ The body of the request must be a CX network containing the nodes, edges, and no
 All nodes that do not have this nodeAttribute set will be treated as having zero heat. 
 
 ### Response Body `<application/json>`
-The response body will contain a CX network containing the nodes, edges, and nodeAttributes aspects. Each node will have two associated attributes, `output_attribute_name`\_rank and `output_attribute_name`\_heat where `output_attribute_name` can be set via the query string parameters (e.g., diffusion_output_rank and diffusion_output_heat). The \_heat attribute will contain the heat of the node after diffusion, the \_rank will have the rank of the node relative to the heats of all other nodes in the network, starting with 0 as the hottest node.
+The response body will contain a CX network containing the nodes, edges, and nodeAttributes aspects. Each node will have two associated attributes, `output_attribute_name`\_rank and `output_attribute_name`\_heat where `output_attribute_name` can be set via the query string parameters (e.g., diffusion_output_rank and diffusion_output_heat). The \_heat attribute will contain the heat of the node after diffusion. The \_rank attribute will have the rank of the node relative to the heats of all other nodes in the network, starting with 0 as the hottest node.
 
 Note that while \_rank and \_heat attributes will be returned for each node in the CX network, attributes present in the input network and not related to heat_diffusion are not guaranteed to be returned.
 
