@@ -36,7 +36,7 @@ This endpoint diffuses heat in CX network and returns a new network representing
 | output_attribute_name | "diffusion_output" | Will be the prefix of the _rank and _heat attriubtes created by diffusion  |  
 
 ### Request Body `<application/json>`
-The body of the request must be a CX network containing the nodes, edges, and nodeAttributes aspects. There must exist at least one nodeAttribute with a key name that matches the `input_attribute_name` parameter and holds a double, which will be interepreted as the heat of that node. (This condition can be fulfilled by having an attribute named `diffusion_input` if the `input_attribute_name` parameter is blank.)
+The body of the request must be a CX network containing the nodes, edges, and nodeAttributes aspects. There must exist at least one nodeAttribute with a key name that matches the `input_attribute_name` parameter and holds a double, which will be interepreted as the heat of that node. (This condition can be minimally fulfilled by omitting the `input_attribute_name` parameter, and having at least one node with an attribute named `diffusion_input` with value 1.0.)
 
 All nodes that do not have this nodeAttribute set will be treated as having zero heat. 
 
