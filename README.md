@@ -11,19 +11,19 @@ A RESTful service that finds network neighborhoods in a larger network relevant 
 
 heat-diffusion is a [cxmate service](https://github.com/cxmate/cxmate)
 
-##Sample Jupyter Notebook
-Please see the jupyter notebook in the repsitory for an example interaction with the service. 
+## Sample Jupyter Notebook
+Please see the jupyter notebook in the repository for an example interaction with the service. 
 
 ## Sample Usage
 Assuming heat-diffusion is running http://v3.heat-diffusion.cytoscape.io on port 80, a call via curl might look like:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d "@my_network.cx" "http://v3.heat-diffusion.cytoscape.io:80?time=0.5"
+curl -X POST -H "Content-Type: application/json" -d "@my_network.cx" -o "my_network.result.cx" "http://v3.heat-diffusion.cytoscape.io:80?time=0.5"
 ```
 
-my_network.cx must be a CX network containing the nodes, edges, and nodeAttributes aspects.
+my_network.cx must be a CX network containing the nodes, edges and nodeAttributes aspects, as described in **Request Body** below. The result will be a CX network containing node heats and ranks, as described in **Response Body** below. (For convenience, there is a sample my_network.cx and corresponding my_network.result.cx in this repository.)
 
-## POST /
+## Endpoint: POST /
 This endpoint diffuses heat in CX network and returns a new network representing the results of the diffusion.
 
 ### Query String Parameters
@@ -36,15 +36,17 @@ This endpoint diffuses heat in CX network and returns a new network representing
 | output_attribute_name | "diffusion_output" | Will be the prefix of the _rank and _heat attriubtes created by diffusion  |  
 
 ### Request Body `<application/json>`
-The body of the request must be a CX container containing the nodes, edges, and nodeAttributes aspects. There must exist at least one nodeAttribute with a key name that matches the `input_attribute_name` parameter and holds a double, which will be intereprested as the heat of that node. All nodes that do not have this nodeAttribute set will be treated as having zero heat.
+The body of the request must be a CX network containing the nodes, edges, and nodeAttributes aspects. There must exist at least one nodeAttribute with a key name that matches the `input_attribute_name` parameter and holds a double, which will be interepreted as the heat of that node. (This condition can be fulfilled by having an attribute named `diffusion_input` if the `input_attribute_name` parameter is blank.)
+
+All nodes that do not have this nodeAttribute set will be treated as having zero heat. 
 
 ### Response Body `<application/json>`
-THe reponse body will contain a CX container containing the nodes, edges, and nodeAttributes aspects. Each node will have two associated attributes, `output_attribute_name`\_rank and `output_attribute_name`\_heat where `output_attribute_name` can be set via the query string parameters. The \_heat attribute will contain the heat of the node after diffusion, the \_rank will have the rank of the node relative to the heats of all other nodes in the network, starting with 0 as the hottest node.
+The response body will contain a CX network containing the nodes, edges, and nodeAttributes aspects. Each node will have two associated attributes, `output_attribute_name`\_rank and `output_attribute_name`\_heat where `output_attribute_name` can be set via the query string parameters (e.g., diffusion_output_rank and diffusion_output_heat). The \_heat attribute will contain the heat of the node after diffusion, the \_rank will have the rank of the node relative to the heats of all other nodes in the network, starting with 0 as the hottest node.
 
 Contributors
 ------------
 
-We welcome all contributions via Github pull requests. We also encourage the filing of bugs and features requests via the Github [issue tracker](https://github.com/idekerlab/heat-diffusion/issues/new). For general questions please [send us an email](eric.david.sage@gmail.com).
+We welcome all contributions via Github pull requests. We also encourage the filing of bugs and features requests via the Github [issue tracker](https://github.com/idekerlab/heat-diffusion/issues/new). For general questions please [send us an email](edsage@ucsd.edu).
 
 License
 -------
