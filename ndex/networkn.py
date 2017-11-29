@@ -136,17 +136,31 @@ class NdexGraph (MultiDiGraph):
         # Maps edge ids to node ids. e.g. { edge1: (source_node, target_node), edge2: (source_node, target_node) }
         self.edgemap = {}
 
-
         if networkx_G is not None:
-            for node_id, data in networkx_G.nodes_iter(data=True):
-                self.add_node(node_id, data)
+            node_id_x = 0
+            node_dict_x = {}
+            self.max_edge_id = 0
+            for node_name, node_attr in networkx_G.nodes_iter(data=True):
+                if 'name' in node_attr:
+                    self.add_node(node_id_x, node_attr)
+                    print(node_attr)
+                else:
+                    self.add_node(node_id_x, node_attr, name=node_name)
+                node_dict_x[node_name] = node_id_x
+                node_id_x += 1
+
             if isinstance(networkx_G, nx.MultiGraph):
                 for s, t, key, data in networkx_G.edges_iter(keys=True, data=True):
-                    self.add_edge(s, t, key, data)
+                    self.add_edge(node_dict_x[s], node_dict_x[t], key, data) #s, t, key, data)
             else:
-                for s, t, data in networkx_G.edges_iter(data=True):
-                    self.add_edge(s, t, self.max_edge_id, data)
+                for s, t, edge_attr in networkx_G.edges_iter(data=True):
+                    self.add_edge(node_dict_x[s], node_dict_x[t], self.max_edge_id, edge_attr)
                     self.max_edge_id += 1
+
+            if hasattr(networkx_G, 'pos'):
+                self.pos = {node_dict_x[a] : b for a, b in networkx_G.pos.items()}
+                self.subnetwork_id = 1
+                self.view_id = 1
             return
 
         if not cx and server and uuid:
