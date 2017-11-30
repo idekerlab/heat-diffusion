@@ -65,7 +65,7 @@ and executing it.
 
 Docker is a prerequisite to your local deployment, and is available on [Docker's homepage](https://www.docker.com/) -- select your platform under the Get Docker Menu bar entry and follow the installation instructions. Once Docker is installed, open your system's shell (i.e., Command Prompt or Terminal) and verify that the installation succeeded by using the `docker --version` command.
 
-After installing Docker, make sure your shell's working directory is inside of the heat-diffusion repository's top level directory. On Linux and Windows systems, this might look like: 
+After installing Docker, make sure your shell's working directory is inside of the heat-diffusion repository's top level directory: 
 
 ```
 git clone https://github.com/idekerlab/heat-diffusion && cd heat-diffusion
