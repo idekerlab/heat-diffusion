@@ -67,3 +67,27 @@ License
 heat-diffusion is MIT licensed and a product of the [Cytoscape Consortium](http://www.cytoscapeconsortium.org).
 
 Please see the [License](https://github.com/cxmate/cxmate/blob/master/LICENSE) file for details.
+
+## Running Locally with Docker
+
+While heat-diffusion is available as a web-based service, there are times when it may be more convenient to run
+the service on your local workstation. To accommodate this, we provide instructions for downloading a Docker image
+and executing it.
+
+Docker is a prerequisite to your local deployment, and is available on [Docker's homepage](https://www.docker.com/) -- select your platform under the Get Docker Menu bar entry and follow the installation instructions. Once Docker is installed, open your system's shell (i.e., Command Prompt or Terminal) and verify that the installation succeeded by using the `docker --version` command.
+
+After installing Docker, make sure your shell's working directory is inside of the heat-diffusion repository's top level directory: 
+
+```
+git clone https://github.com/idekerlab/heat-diffusion && cd heat-diffusion
+```
+
+Run the deployment script (`./scripts/deploy.sh` for Mac/Linux, `./scripts/deploy.bat` for Windows) -- you may need administrator
+privileges for this. The script builds the heat-diffusion service locally using Docker, deploys heat-diffusion and its dependancies locally, and makes heat-diffusion callable via localhost:80. To test this, use curl as described in the Sample Usage section above,
+but use http://localhost:80 in place of the standard service web address.
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d "@my_network.cx" -o "my_network.result.cx" "http://localhost:80?time=0.5"
+```
+
+When you're done, run `docker container stop heat-diffusion cxmate && docker container rm heat-diffusion cxmate` in the same directory to stop and remove heat-diffusion and its dependancies.
