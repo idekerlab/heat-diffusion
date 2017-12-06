@@ -6,7 +6,7 @@
     }
   },
   "service": {
-    "location": "localhost:8080",
+    "location": "diffusion:8080",
     "title": "Heat Diffusion",
     "version": "3.0.0",
     "author": "Daniel Carlin",
