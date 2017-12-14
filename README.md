@@ -90,4 +90,4 @@ but use http://localhost:80 in place of the standard service web address.
 curl -X POST -H "Content-Type: application/json" -d "@my_network.cx" -o "my_network.result.cx" "http://localhost:80?time=0.5"
 ```
 
-When you're done, run `docker container stop heat-diffusion cxmate && docker container rm heat-diffusion cxmate` in the same directory to stop and remove heat-diffusion and its dependancies.
+When you're done, run `docker container stop heat-diffusion cxmate && docker container rm heat-diffusion cxmate` in the same directory to stop and remove heat-diffusion and its dependencies.
