@@ -5,7 +5,19 @@ heat-diffusion
 
 ---
 
-A RESTful service that finds network neighborhoods in a larger network relevant to an initial set of nodes of interest. It works by propagating the node set across the network in a process analogous to heat diffusing across a conductive medium. A typical application would be discovering network mechanisms from hits in a screen or differential expression analysis. More generally this service is applicable for paring a larger network to a smaller, more manageable one based on known nodes of interest. For details on the process of heat diffusion see the manuscript "Network propagation in the Cytoscape Cyberinfrastructure. Carlin DE et al. Submitted to PLoS Computational Biology.
+A RESTful service that finds network neighborhoods in a larger network relevant to an initial set 
+of nodes of interest. It works by propagating the node set across the network in a process 
+analogous to heat diffusing across a conductive medium. A typical application would be discovering 
+network mechanisms from hits in a screen or differential expression analysis. More generally this 
+service is applicable for paring a larger network to a smaller, more manageable one based on known 
+nodes of interest. For details on the process of heat diffusion see the manuscript:
+
+
+Carlin DE, Demchak B, Pratt D, Sage E, Ideker T. Network propagation in the cytoscape 
+cyberinfrastructure. PLoS Comput Biol. 2017 Oct;13(10):e1005598. 
+doi: [10.1371/journal.pcbi.1005598](https://doi.org/10.1371/journal.pcbi.1005598). 
+eCollection 2017 Oct. PubMed PMID: [29023449](https://pubmed.ncbi.nlm.nih.gov/29023449); 
+PubMed Central PMCID: [PMC5638226](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5638226/).
 
 ---
 
